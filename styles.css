@@ -58,3 +58,11 @@ img {
     height: 100px;
     margin-top: 10px;
 }
+
+#sprite {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    display: block;
+    visibility: hidden;
+}

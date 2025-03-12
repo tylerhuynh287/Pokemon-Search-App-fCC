@@ -36,7 +36,7 @@ function displayPokemonInfo(data) {
     document.getElementById("speed").innerText = data.stats[5].base_stat;
 
     document.getElementById("sprite").src = data.sprites.front_default;
-    document.getElementById("sprite").style.display = "block";
+    document.getElementById("sprite").style.visibility = "visible";
 
     let typesContainer = document.getElementById("types");
     typesContainer.innerHTML = "";
@@ -58,6 +58,12 @@ function clearPokemonInfo() {
     document.getElementById("special-attack").innerText = "";
     document.getElementById("special-defense").innerText = "";
     document.getElementById("speed").innerText = "";
-    document.getElementById("sprite").style.display = "none";
+    document.getElementById("sprite").src = "";
+    document.getElementById("sprite").style.visibility = "hidden";
     document.getElementById("types").innerHTML = "";
 }
+
+document.getElementById("clear-button").addEventListener("click", function () {
+    document.getElementById("search-input").value = "";
+    clearPokemonInfo();
+});
