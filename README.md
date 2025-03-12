@@ -35,5 +35,7 @@ A simple web application that allows users to search for Pokémon by name or ID 
 - **Autocomplete Suggestions**: Provide search suggestions as users type.
 - **Shiny Pokémon Support**: Display shiny Pokémon sprites if available.
 - **More Detailed Info**: Add abilities, evolution chain, and move sets.
+- **Change API**: Change to a more comprehesive API.
+- **Restructure Visuals**: Rewrite CSS to look like actual Pokédex with hover, etc.
 
 Enjoy searching for your favorite Pokémon!
